@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!---- navigation bar--->
+    
+     <div class="container">
+        <nav>
+            <img src="./img/showmenu.png.png" class="menu" onclick="openmenu()" width="30px">
+            <div class="logo">
+                <div class="gsf-logo">
+                   
+                    <img src="./img/gsf_logo-removebg-preview.png" width="200px" alt="">
+                </div>
+                <h2><span>Gsf</span> Lasustech Library</h2>
+            </div><br>
+            <div class="navlink" id="navlink">
+                
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="library.html" class="current">LIBRARY</a></li>
+                    <li><a href="contact.html">CONTACT-US</a></li>
+                </ul>
+               
+            </div>
+        </nav>
+      
+        <marquee behavior="alternate" 
+       scrollamount="5" width="100%" bg="transparent">
+            <div class="content">
+                <h1>Welcome To <br>Our Store Of Information </h1>
+            </div>
+        </marquee>
+       </div><br><br><br>
+        
+    <section>
+        <div class="cont">
+            <h2><a href="book store.html">BOOK STORE</a></h2>
+            <p>
+                Take a journey through time with our Archive section.
+                
+                 Explore events that have shaped our community and learn from the experiences of previous generations. This treasure trove of historical information offers valuable insights and inspiration for all.
+                
+                Also, get a chance to meet and link up with great leaders from previous tenures.
+                
+               </p>
+                
+        </div>
+        <div class="cont">
+            <h2><a href="audio.html">AUDIO SERMON</a></h2>
+            <P>
+                We have a wide selection of books, articles, and educational materials that cover a range of topics. 
+                Whether you're looking for spiritual growth, personal development, or practical advice, our library has it all.
+            </P>
+        </div>
+        <div class="cont">
+            <h2><a href="acheive.html">ARCHIVE</a></h2>
+            <P>Don't miss out on our Audio Sermons feature, where you can listen to inspiring sermons from the comfort of your own home. Simply click and play to tune in to our latest messages delivered by our talented, knowledgeable and Spirit- filled leaders.</P>
+        </div>
+        
+        <div class="cont">
+            <h2><a href="video.html">VIDEOS</a></h2>
+            <P>
+                Immerse yourself in our Short Video collection that showcases compelling and thought-provoking content.
+                
+                 These video clips include condensed sermon highlights that provide powerful messages within a few minutes. 
+                
+                Perfect for those on-the-go who seek instant spiritual enlightenment.
+                
+            </P>
+        </div>
+        
+        
+    </section>
+    <footer>
+        <p>COPYRIGHT 2023 OF GSF LASUSTECH &copy;|WEBSITE DESIGN BY:AYODELE.COM |PRIVACY POLICY</p>
+       </footer>
+       <script>
+        function openmenu(){
+            let navlink = document.getElementById("navlink");
+            if (navlink.style.left == "-400px"){
+                navlink.style.left = "0";
+            }
+            else{
+                navlink.style.left = "-400px";
+            }
+    
+        }
+    </script>   
+</body>
+</html>

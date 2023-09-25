@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/showmenu.png.png" class="menu" onclick="openmenu()" width="30px">
+        <div class="logo">
+            <div class="gsf-logo">
+               
+                <img src="./img/gsf_logo-removebg-preview.png" width="200px" alt="">
+            </div>
+            <h2><span>Gsf</span> Lasustech Library</h2>
+        </div><br>
+        <div class="navlink" id="navlink">
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="library.html" >LIBRARY</a></li>
+                <li><a href="contact.html" class="current">CONTACT-US</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+
+    <section>
+        <div class="contact">
+            <img src="./img/library 1.webp" width="550px" height="60vh">
+             <form action="">
+                <label for="">Enter your email address</label><br>
+                <input type="text" placeholder="Email........." required><br><br>
+                <label for="">
+                    Comment 
+                </label>
+                
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+                <button>Contact Us</button>
+             </form>
+
+        </div>
+        <div class="socials">
+            <h4>Gsflasustech@ <img src="./img/gsf logo.jpg" width="600px" alt=""></h4>
+        </div>
+        <style>
+            h4{
+                text-align: center;
+            }
+            
+        </style>
+        
+    </section><br><br><br><br><br>
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>COPYRIGHT 2023 OF GSF LASUSTECH &copy;|WEBSITE DESIGN BY:AYODELE.COM |PRIVACY POLICY</p>
+       </footer>
+       <script>
+        function openmenu(){
+            let navlink = document.getElementById("navlink");
+            if (navlink.style.left == "-400px"){
+                navlink.style.left = "0";
+            }
+            else{
+                navlink.style.left = "-400px";
+            }
+    
+        }
+        </script>
+</body>
+</html>

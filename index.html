@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <nav>
+        <img src="./img/showmenu.png.png" class="menu" onclick="openmenu()" width="30px">
+        <div class="logo">
+            <div class="gsf-logo">
+               
+                <img src="./img/gsf_logo-removebg-preview.png" width="200px" alt="">
+            </div>
+            <h2><span>Gsf</span> Lasustech Library</h2>
+        </div><br>
+        <div class="navlink" id="navlink">
+            
+            <ul>
+                <li><a href="index.html" class="current">HOME</a></li>
+                <li><a href="library.html">LIBRARY</a></li>
+                <li><a href="contact.html">CONTACT-US</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+    <marquee behavior="alternate" 
+   scrollamount="5" width="100%" bg="transparent">
+        <div class="content">
+            <h1>Welcome To <br> GSF Lasustech Student Library</h1>
+        </div>
+    </marquee>
+   </div>
+   <section>
+
+    <div class="about">
+        <a href="#"><h2>About Us</h2></a>
+        <p>Let's quickly dive into what this amazing Library can offer you!
+
+            Discover the vast resources available to you in our Library. 
+            
+            We have a wide selection of books, articles, and educational materials that cover a range of topics. Whether you're looking for spiritual growth, personal development, or practical advice, our library has it all.
+            
+
+           <br><br><br> <div class="explore">
+                <a href="library.html">EXPLORE</a>
+            </div>
+            <style>
+                 .explore a{
+                    width: 50%;
+                    margin-left: 25%;
+                    height: 8vh;
+                    font-size: 40px;
+                    display: flex;
+                    background: rgb(50, 50, 210);
+                    cursor: pointer;
+                    color: gold;
+                    font-weight: bold;
+                    border: 2px solid;
+                    border-radius: 18px;
+                    border-color:gold;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 1s;
+                    
+                 }
+                 .explore a:hover{
+                    width: 55%;
+                    font-size: 42px;
+                    background: gold;
+                    color:rgb(50, 50, 210);
+                    border-color:rgb(50, 50, 210);
+                 }
+            </style>
+
+        </p>
+        <br><br><br><br><br><br>
+        
+
+        <div class="pioneer">
+           <!--slider image of G.S.F L.I.B pioneers-->
+<div class="h2">
+    <h2 style="color: rgb(10, 10, 89)">GSF LASUSTECH LIBRARY PIONEERS</h2><br><br><br>
+</div>
+    <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext"><h2>Ayodele Samuel: Developer</h2></div>
+        <style>
+            .numbertext h2{
+                margin-left: 30%;
+            }
+            .h2 h2{
+                margin-left: 28%;
+            }
+            
+        </style>
+        <div class="img-back">
+            <img src="./img/27.jpg">
+        </div>
+        <div class="text"><h2></h2></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"><h2>Akinyomi Godwin: Developer</h2></div>
+        <div class="img-back">
+            <img src="./img/akinyomi.jpg">
+        </div>
+        <div class="text"><h2></h2></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"><h2>Ishola Oluwafunmilola: Content Creator</h2></div>
+       <div class="img-back">
+        <img src="./img/olufunmilola.jpg">
+       </div>
+        <div class="text"><h2></h2></div>
+      </div>
+      
+    </div>
+    <style>
+        .img-back{
+           
+        }
+        .img-back img{
+            justify-content: center;
+            align-items: center;
+            background: black;
+            width: 90vh;
+            height: 90vh;
+            border: 2px solid;
+            margin-left: 20%;
+            
+        }
+        .slideshow-container{
+            margin-left: 25%;
+        }
+        .slideshow-container{
+            margin-left: 5%;
+        }
+        @media only screen and (max-width:700px) {
+            .img-back img{
+        width: 55vh;
+        height: 55vh;
+        margin-left: 3%;
+    }
+    .explore a{
+                    width: 50%;
+                    margin-left: 25%;
+                    height: 4vh;
+                    font-size: 22px;
+                    
+                 }
+                 .explore a:hover{
+                    width: 55%;
+                    font-size: 24px;
+                    background: gold;
+
+                 }
+    
+    
+
+    
+            
+        }
+    </style>
+    
+    
+    <br>
+    
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); 
+      }
+    </script>
+<!--end of slider image of G.S.F L.I.B pioneers-->
+            
+
+        </div>
+    </div>
+   </section><br><br><br><br><br>
+   <section class="foot">
+    <h4>PRIVACY POLICY | CONTACT US</h4>
+   </section><br><br><br><br><br><br>
+   <footer>
+    <p>COPYRIGHT 2023 LIBRARY UNIT GSF LASUSTECH &copy;|PRIVACY POLICY</p>
+   </footer>
+   <script>
+    function openmenu(){
+        let navlink = document.getElementById("navlink");
+        if (navlink.style.left == "-400px"){
+            navlink.style.left = "0";
+        }
+        else{
+            navlink.style.left = "-400px";
+        }
+
+    }
+</script>   
+</body>
+</html>
