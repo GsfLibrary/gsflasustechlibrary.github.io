@@ -9,6 +9,7 @@
 /*------the body style--------*/
 body{
     background-color: whitesmoke;
+    padding-bottom: 40px;
 }
 /*------navigation bar and landing page styling  */
 
@@ -81,7 +82,7 @@ nav ul li a{
 .about p{
     text-align: center;
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 
 }
 .about a{
@@ -107,7 +108,7 @@ section .cont{
 }
 
 .book-column a{
-    color:goldenrod;
+    color: rgb(2, 2, 63);
     text-decoration: none;
     text-align: center;
     font-size: 18px;
@@ -153,19 +154,15 @@ footer p{
 }
 /*---sections----*/
 section .cont a{
-    color:goldenrod;
+    color: rgb(2, 2, 63);
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid;
-    border-color: goldenrod;
     background-color: transparent;
 
 }
 section .cont a:hover{
     color: white;
-    background-color: goldenrod;
-    border-color: white;
-    border: 2px solid;
+    background-color: rgb(2, 2, 63);
 }
 .contact{
     margin-top: 100px;
@@ -225,9 +222,7 @@ input{
     padding: 60px;
 }
 .book-column P{
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 19px;
 }
 .contact{
     align-items: center;
@@ -286,7 +281,7 @@ nav ul li a:hover{
     font-style: italic;
 }
 .book-store h3{
-    color:rgb(238, 158, 9);
+    color:rgb(5, 5, 82);
     text-decoration: underline;
 }
 .list-books-avail{
@@ -367,9 +362,36 @@ nav ul li a:hover{
 .menu{
     display: none;
 }
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+}
+.arch{
+    display: flex;
+    flex-wrap: wrap;
+}
+.book-column{
+    width: 30.3%;
+    height: 550px;
+   
+    box-sizing: content-box;
+    margin-left: 10px;
+}
+.archive-column{
+    width:35%;
+    height: 420px;
+    box-sizing: content-box;
+    margin-left: 100px;
+    padding: 20px;
+}
+.arc{
+    text-align: center;
+}
 .book-column img{
-    width: 250px;
+    width: 80%;
     height:200px;
+    justify-content: center;
+    align-items: center;
     
 }
 .book-button button{
@@ -386,9 +408,14 @@ nav ul li a:hover{
     border-color: white;
 
 }
+/*.lib img{
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}*/
 /*media queries*/
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:600px){
     body{
         background-color: azure;
     }
@@ -408,28 +435,22 @@ nav ul li a:hover{
         font-size: 18px;
     }
     nav{
-        background-color:  rgb(255, 255, 254);
         position: fixed;
         background-position-x: top;
     }
     .navlink{
     position: absolute;
-    background: rgb(255, 255, 254);
+    background-color: whitesmoke;
     margin-top: 40px;
     height: 50vh;
     width: 200px;
     top: 0;
     left: -400px;
-    z-index: -1000;
+    z-index:-1000000000 ;
     transition: 0.5s;   
 
     }
-    footer{
-        background-color:rgb(255, 255, 254) ;
-    }
-    footer p{
-        color: black;
-    }
+
     nav ul  {
         display: block;
         padding-top:60px ;
@@ -437,6 +458,7 @@ nav ul li a:hover{
     }
     nav ul li a {
         padding:10px;
+        padding-top: 20px;
         align-items: center;
         text-align: center;
         justify-content: space-between;
@@ -444,7 +466,7 @@ nav ul li a:hover{
         font-size: 15px;
         font: bold;
         color: black;
-        z-index: -100000;
+        z-index:;
     }
    
     .menu{
@@ -540,7 +562,43 @@ nav ul li a:hover{
     font-size: 15px;
     text-align: center;
 }
+.book-column{
+    width: 70%;
+    height: 40%;
+    margin-left: 60px;
+    
+}
+
+.categories{
+    display: block;
+    
+}
+.arch{
+    display: block;
+}
+.archive-column{
+    width:70%;
+    height: 40%;
+    margin-left: 40px;
+}
+.archive-column img{
+    height: 50vh;
+    width: 60vh;
+}
+.contact{
+    display: block;
+}
+.contact form{
+    width: 50%;
+    margin-left: 50%;
+}
+.contact form label{
+    font-size: 20px;
+}
 
 
 
+}
+.border{
+    border: 2px solid rgb(22, 2, 78);
 }
