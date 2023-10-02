@@ -408,6 +408,54 @@ nav ul li a:hover{
     border-color: white;
 
 }
+.explore a{
+    width: 50%;
+    margin-left: 25%;
+    height: 8vh;
+    font-size: 40px;
+    display: flex;
+    background: rgb(50, 50, 210);
+    cursor: pointer;
+    color: gold;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 18px;
+    border-color:gold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    
+ }
+ .explore a:hover{
+    width: 55%;
+    font-size: 42px;
+    background: gold;
+    color:rgb(50, 50, 210);
+    border-color:rgb(50, 50, 210);
+ }
+ .img-back img{
+     justify-content: center;
+     align-items: center;
+     background: black;
+     width: 90vh;
+     height: 90vh;
+     border: 2px solid;
+     margin-left: 20%;
+     
+ }
+ .slideshow-container{
+     margin-left: 25%;
+ }
+ .slideshow-container{
+     margin-left: 5%;
+ }
+
+.h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 /*.lib img{
     justify-content: center;
     align-items: center;
@@ -415,7 +463,7 @@ nav ul li a:hover{
 }*/
 /*media queries*/
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
     body{
         background-color: azure;
     }
@@ -466,7 +514,7 @@ nav ul li a:hover{
         font-size: 15px;
         font: bold;
         color: black;
-        z-index:;
+        z-index:-10000000000;
     }
    
     .menu{
@@ -551,6 +599,28 @@ nav ul li a:hover{
 .about{
     margin: 70px;
 }
+.img-back img{
+    width: 40vh;
+    height: 45vh;
+    margin-left: 8%;
+}
+.explore a{
+    width: 50%;
+    margin-left: 25%;
+    height: 4vh;
+    font-size: 22px;
+    
+ }
+ .explore a:hover{
+    width: 55%;
+    font-size: 24px;
+    background: gold;
+
+ }
+ .numbertext{
+    text-align: center;
+    margin-right: 100px;
+ }
 
 
  .numbertext h2{
@@ -599,6 +669,219 @@ nav ul li a:hover{
 
 
 }
+
+
+
+
+@media only screen and (max-width:350px){
+    body{
+        background-color: azure;
+    }
+
+    .content{
+        margin: 100px;
+        font-size: 10px;
+        text-align: center;
+        display:inline;
+    }
+    .content h1{
+        margin-top: 200px;
+    }
+    .logo h2{
+        display:flex;
+        padding-top: 70px;
+        font-size: 18px;
+    }
+    nav{
+        position: fixed;
+        background-position-x: top;
+    }
+    .navlink{
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: 40px;
+    height: 50vh;
+    width: 200px;
+    top: 0;
+    left: -400px;
+    z-index:-1000000000 ;
+    transition: 0.5s;   
+
+    }
+
+    nav ul  {
+        display: block;
+        padding-top:60px ;
+        
+    }
+    nav ul li a {
+        padding:10px;
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        display:grid;
+        font-size: 15px;
+        font: bold;
+        color: black;
+        z-index:-1000000000;
+    }
+   
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .menu:hover{
+        background-color: white;
+    }
+    .heading h2{
+        font-size: 17px;
+    }
+    
+.list-1{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-2{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-3{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-4{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.list-5{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.list-6{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.list-7{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.list-text{
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    min-height: 70vh;
+    width: 100%;
+    background: rgba(0,0,0, 0.7)url(.//img/library.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}.about p{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2.2px;
+
+}
+.about a{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 50px;
+    color: black;
+}
+.img-back img{
+    width: 30vh;
+    height: 35vh;
+    margin-left: 8%;
+}
+.explore a{
+    width: 50%;
+    margin-left: 25%;
+    height: 4vh;
+    font-size: 22px;
+    
+ }
+ .explore a:hover{
+    width: 55%;
+    font-size: 24px;
+    background: gold;
+
+ }
+ .numbertext{
+    text-align: center;
+    margin-right: 100px;
+ }
+
+.about{
+    margin: 70px;
+}
+
+
+ .numbertext h2{
+    margin-left: 7%;
+    font-size: 15px;
+}
+.h2 h2{
+    margin-left: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.book-column{
+    width: 70%;
+    height: 40%;
+    margin-left: 30px;
+    
+}
+
+.categories{
+    display: block;
+    
+}
+.arch{
+    display: block;
+}
+.archive-column{
+    width:70%;
+    height: 40%;
+    margin-left: 20px;
+}
+.archive-column img{
+    height: 50vh;
+    width: 60vh;
+}
+.contact{
+    display: block;
+}
+.contact form{
+    width: 50%;
+    margin-left: 50%;
+}
+.contact form label{
+    font-size: 20px;
+}
+
+
+
+}
 .border{
     border: 2px solid rgb(22, 2, 78);
+}
+section h3{
+    text-align: center;
 }
